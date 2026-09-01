@@ -2,6 +2,7 @@
 
 프론트엔드 연동 
 
+
 ## VS Code에서 실행하는 법
 
 1. **Node.js 설치 확인** (18버전 이상 권장)
@@ -66,4 +67,7 @@ backdoor-privacy-check/
 
 
 ## 다음 단계 (2단계, 백엔드)
+
+## .Env.local 파일생성해야함
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY= ~~~ #키라서 리드미에 올리지 않았습니다!! / 노션에 올려놨어요
 
