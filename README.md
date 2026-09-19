@@ -1,37 +1,76 @@
 # BackDoor 개인정보 진단
 
-프론트엔드 연동 
+# 프론트엔드 실행 방법
 
+Node.js 18 이상 권장
 
-## VS Code에서 실행하는 법
+```bash
+node -v
+npm -v
+```
 
-1. **Node.js 설치 확인** (18버전 이상 권장)
-   터미널에서 `node -v` 로 확인. 없다면 https://nodejs.org 에서 LTS 버전 설치.
+처음 실행할 때는 의존성을 설치합니다.
 
-2. **VS Code에서 이 폴더 열기**
-   `파일 > 폴더 열기` 로 `backdoor-privacy-check` 폴더 선택.
+```bash
+npm install
+```
 
-3. **터미널 열기**
-   VS Code 상단 메뉴 `Terminal > New Terminal` (단축키: `` Ctrl+` ``)
+이후 개발 서버 실행:
 
-4. **의존성 설치** (최초 1회만)
-   ```
-   npm install
-   ```
+```bash
+npm run dev
+```
 
-5. **개발 서버 실행**
-   ```
-   npm run dev
-   ```
-   터미널에 `Local: http://localhost:3000` 이 뜨면, 브라우저에서 그 주소로 접속하면 됩니다.
-   (VS Code가 자동으로 "브라우저에서 열기" 알림을 띄우기도 해요.)
+브라우저에서 `http://localhost:3000` 접속
 
-6. **코드 수정하면 자동 반영**
-   `npm run dev` 를 켜둔 채로 파일을 저장하면 브라우저가 자동으로 새로고침됩니다 (Hot Reload).
+## macOS
 
-7. **종료**
-   터미널에서 `Ctrl + C`
+```bash
+cd ~/Downloads/campaign-main/campaign-main
+npm install
+npm run dev
+```
 
+## Windows PowerShell
+
+```powershell
+cd C:\Users\사용자이름\Downloads\campaign-main\campaign-main
+npm install
+npm run dev
+```
+
+## Windows CMD
+
+```cmd
+cd /d C:\Users\사용자이름\Downloads\campaign-main\campaign-main
+npm install
+npm run dev
+```
+
+## WSL
+
+```bash
+cd /mnt/c/Users/사용자이름/Downloads/campaign-main/campaign-main
+npm install
+npm run dev
+```
+
+## 오류 해결
+
+아래 오류가 뜨는 경우:
+
+```text
+'next'은(는) 내부 또는 외부 명령...
+```
+
+의존성이 설치되지 않은 것이므로:
+
+```bash
+npm install
+npm run dev
+```
+
+서버 종료는 모든 환경에서 `Ctrl + C`
 
 
 ## 폴더 구조
